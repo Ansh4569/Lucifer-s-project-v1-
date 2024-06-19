@@ -1,0 +1,66 @@
+--project lucifer--
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Lucifer hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "UPDATES✅",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "💀❌script is under development so use on your own risk💀❌"
+})
+
+local Tab = Window:MakeTab({
+    Name = "JULHUBZ[auto farm🐈]",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "JULHUBZ"
+})
+
+Tab:AddButton({
+    Name = "Execute!",
+    Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))();
+              print("button pressed")
+      end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "DUPE PETS",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "EQUIP THE PET THAT U WANT TO DUPE"
+})
+
+Tab:AddButton({
+	Name = "SET YOUR PET [click on SET YOUR PET and than click on the dupe]!",
+	Callback = function()loadstring(game:httpGet("https://raw.githubusercontent.com/Ansh4569/Lucifer-s/main/adoptme"))()
+      		print("button pressed")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Dupe!",
+	Callback = function()OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "DUPE IN UNDERPROCESS WAIT 4-5MIN.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+      		print("button pressed")
+  	end    
+})
+
+
+
+
